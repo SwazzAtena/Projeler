@@ -1,0 +1,58 @@
+from colorama import Fore, init
+import os
+os.system("pip install colorama")
+os.system("CLS")
+print(Fore.LIGHTMAGENTA_EX + "Koto Teknik Koleji Ders Ağırlığına Göre Ortalama Hesaplama Programı")
+print(Fore.LIGHTCYAN_EX)
+k=input("Tahmini Ortalama Hedefiniz Nedir: ")
+TDVE=input("Edebiyat Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+ATLY=input("Atölye Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+BYLJ=input("Biyoloji Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+DIN=input("Din Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+FZK=input("Fizik Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+MAT=input("Matematik Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+SNSR=input("Sensör Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+MODELLEME=input("Modelleme Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+CGRFY=input("Coğrafya Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+BDN=input("Beden Eğitimi Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+TRH=input("Tarih Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+FLSF=input("Felsefe Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+KMY=input("Kimya Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+ING=input("İngilizce Yazılı Notunuzu Giriniz Varsa İkisinin Ortalaması : ")
+TDVE1 = int(TDVE)
+ATLY1 = int(ATLY)
+BYLJ1 = int(BYLJ)
+DIN1 = int(DIN)
+FZK1 = int(FZK)
+MAT1 = int(MAT)
+SNSR1 = int(SNSR)
+MODELLEME1 = int(MODELLEME)
+CGRFY1 = int(CGRFY)
+BDN1 = int(BDN)
+TRH1 = int(TRH)
+FLSF1 = int(FLSF)
+KMY1 = int(KMY)
+ING1 = int(ING)
+All=(TDVE1+ATLY1+BYLJ1+DIN1+FLSF1+FZK1+MAT1+SNSR1+MODELLEME1+CGRFY1+BDN1+TRH1+KMY1+ING1)
+ort=int(All) / 14
+print("Ortalamanız Aşşağıda Farklı Renklerde Yazıyor")
+init(autoreset=True)
+print(Fore.BLUE)
+print(Fore.GREEN)
+print(Fore.YELLOW)
+print(Fore.RED)
+print(Fore.LIGHTMAGENTA_EX)
+print(ort)
+
+if float(k)>= ort and ort >= 85:
+    print("Hedef Gerçekleştirildi Tebrikler")
+    print("Takdir Aldınız")
+if float(k)<= ort:
+    print("Hedef Gerçekleştirilemedi")
+elif 70<ort<84.99:
+    print("Teşekkür Aldınız")
+else:
+    print("SiktirName :)")
+
+t=input("Çıkmak İçin Bir Tuşa Basınız")
+
